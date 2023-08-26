@@ -36,6 +36,11 @@ variable "k8s_version" {
   type        = string
 }
 
+variable "k8s_cluster_name" {
+  description = "kubernetes cluster name"
+  type        = string
+}
+
 ################################## EKS Node Config ##################################
 variable "instance_type" {
   description = "node instance type"

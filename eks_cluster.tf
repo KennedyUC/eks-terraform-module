@@ -23,7 +23,7 @@ resource "aws_iam_role_policy_attachment" "AmazonEKSClusterPolicy" {
 }
 
 resource "aws_eks_cluster" "eks_cluster" {
-  name                    = "${var.env}-k8s-cluster"
+  name                    = var.k8s_cluster_name
   role_arn                = aws_iam_role.EKSClusterRole.arn
   version                 = var.k8s_version
 
