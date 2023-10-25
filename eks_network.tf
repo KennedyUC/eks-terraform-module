@@ -23,7 +23,7 @@ resource "aws_subnet" "public_subnets" {
 
   tags = {
     Name = "${var.project_name}-${var.env}-public-subnet"
-    "kubernetes.io/cluster/${var.env}-k8s-cluster" = "shared"
+    kubernetes.io/cluster/${var.k8s_cluster_name} : shared
   }
 }
 
