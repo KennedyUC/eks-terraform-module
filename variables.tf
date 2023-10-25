@@ -81,3 +81,8 @@ variable "capacity_type" {
   description = "instance capacity type"
   type        = string
 }
+
+variable "nodes_role" {
+  description = "IAM role for EKs Node Groups"
+  type        = string
+}
