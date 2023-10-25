@@ -31,6 +31,11 @@ variable "subnet_bits" {
 }
 
 ################################## EKS Cluster Config ###############################
+variable "cluster_role" {
+  description = "IAM role for k8s cluster"
+  type        = string
+}
+
 variable "k8s_version" {
   description = "kubernetes version"
   type        = string
